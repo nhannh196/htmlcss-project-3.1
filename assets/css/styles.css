@@ -10,3 +10,110 @@ body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
 }
+
+/* Common */
+.container {
+    width: 1140px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-width: 173px;
+    min-height: 57px;
+    padding: 14px 30px;
+    font-family: "Public Sans";
+    font-size: 1.8rem;
+    font-weight: 500;
+    border-radius: 40px;
+    border: 1.5px solid #143c3c;
+    background-color: #143c3c;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    text-decoration: underline;
+}
+
+/*--------------------------------------------------- HEADER --------------------------------------------------- */
+
+/* Nav */
+.header {
+    padding-top: 15px;
+    position: sticky;
+    top: -15px;
+}
+
+.header__inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px 0;
+}
+
+.header__inner::after {
+    position: absolute;
+    bottom: 0;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #143c3c;
+    background: linear-gradient(
+        90deg,
+        #fff 0%,
+        #dddcdc 51.09%,
+        rgba(212, 212, 212, 0) 99.68%
+    );
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    column-gap: 69px;
+    margin-left: 88px;
+}
+
+.navbar__list {
+    display: flex;
+}
+
+.navbar__item {
+    position: relative;
+    padding: 10px 19px;
+    color: #575d5e;
+    font-family: "Public Sans";
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.56;
+    transition: 0.3s;
+}
+
+.navbar__item.navbar__actived,
+.navbar__item:hover {
+    color: #152427;
+    text-shadow: 1px 0 0 #152427;
+}
+
+.navbar__item.navbar__actived::after {
+    display: inline-block;
+    position: absolute;
+    left: 19px;
+    bottom: -17px;
+    content: "";
+    width: 16px;
+    height: 2px;
+    background-color: #143c3c;
+    z-index: 1;
+}
