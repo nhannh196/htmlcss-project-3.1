@@ -257,3 +257,25 @@ a {
     right: 45px;
     bottom: -22px;
 }
+
+/*------------------------------------------------- LOGO BRAND ------------------------------------------------- */
+.logo-brand {
+    padding: 102px 0 14px;
+}
+
+.logo-brand__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 201px;
+    padding: 0 121px;
+    border-radius: 100.5px;
+    background: #e2eddf;
+}
+
+.logo-brand__item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 11px;
+}
